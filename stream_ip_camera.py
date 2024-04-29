@@ -2,8 +2,8 @@
 import cv2
 
 # RTSP URL of the stream
-# structure is: rtsp://username:password@ip_address:port/path
-rtsp_url = "rtsp://admin:admin12345@192.168.0.102/stream1"
+# structure is: rtsp://username:password@ip_address:port/path where path is often stream1 or stream2 with stream 1 being higher quality
+rtsp_url = "rtsp://username:password@ip_address:port/path"
 
 # Create a VideoCapture object
 cap = cv2.VideoCapture(rtsp_url)
